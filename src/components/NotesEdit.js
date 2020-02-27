@@ -52,7 +52,7 @@ class NotesEdit extends Component {
                 chatUserCount: userCount
             });
         });
-        socket.on("disconnect", (userCount) => {
+        socket.on("userCountUpdate", (userCount) => {
             // Add new messages to existing messages in "chat"
             console.log("usercount is", userCount)
             this.setState({
