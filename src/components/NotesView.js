@@ -25,7 +25,8 @@ class NotesView extends Component {
                     users: users
                 });
             });
-        fetch('http://localhost:3004/notes')
+        // fetch('http://localhost:3004/notes')
+        fetch('http://hackreadingapi.herokuapp.com/notes')
             .then(response => {
                 return response.json()
             })
@@ -46,7 +47,8 @@ class NotesView extends Component {
                     users: users
                 });
             });
-        fetch('http://localhost:3004/notes')
+        // fetch('http://localhost:3004/notes')
+        fetch('http://hackreadingapi.herokuapp.com/notes')
             .then(response => {
                 return response.json()
             })
@@ -64,7 +66,8 @@ class NotesView extends Component {
     }
     handleSubmit = (event) => {
         event.preventDefault()
-        fetch('http://localhost:3004/notes', {
+        // fetch('http://localhost:3004/notes', {
+        fetch('http://hackreadingapi.herokuapp.com/notes', {
             body: JSON.stringify(this.state),
             method: 'POST',
             headers: {
