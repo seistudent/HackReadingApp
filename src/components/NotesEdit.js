@@ -56,6 +56,7 @@ class NotesEdit extends Component {
             // Add new messages to existing messages in "chat"
             console.log("emitted message received", { id, msg })
             this.setState({
+                chatUserCount: userCount,
                 chatDisplay: [...this.state.chatDisplay, { id, msg }]
             });
         });
