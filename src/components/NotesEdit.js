@@ -52,11 +52,17 @@ class NotesEdit extends Component {
                 chatUserCount: userCount
             });
         });
-        socket.on("chat message", ({ id, msg }, userCount) => {
+        socket.on("disconnect", (userCount) => {
+            // Add new messages to existing messages in "chat"
+            console.log("usercount is", userCount)
+            this.setState({
+                chatUserCount: userCount
+            });
+        });
+        socket.on("chat message", ({ id, msg }) => {
             // Add new messages to existing messages in "chat"
             console.log("emitted message received", { id, msg })
             this.setState({
-                chatUserCount: userCount,
                 chatDisplay: [...this.state.chatDisplay, { id, msg }]
             });
         });
