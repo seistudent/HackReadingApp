@@ -27,7 +27,7 @@ class Services extends Component {
                                 <h4>
                                     <strong>NLP-enhanced</strong>
                                 </h4>
-                                <p class="text-faded mb-0">We use NLP to analyze, summarize and translate your notes instantly</p>
+                                <p class="text-faded mb-0">We use NLP to analyze, conduct entity extraction and auto-summarize your notes instantly</p>
                             </div>
                             <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                                 <span class="service-icon rounded-circle mx-auto mb-3">
@@ -36,7 +36,7 @@ class Services extends Component {
                                 <h4>
                                     <strong>Collaborative</strong>
                                 </h4>
-                                <p class="text-faded mb-0">We support real-time collaborative editing</p>
+                                <p class="text-faded mb-0">We support real-time collaboration via live-chat</p>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <span class="service-icon rounded-circle mx-auto mb-3">

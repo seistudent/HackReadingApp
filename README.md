@@ -2,35 +2,32 @@
 
 Welcome to HackReading! This is a productivity application, that helps you organise your notes and better leverage the power of reading to build knowledge. 
 
-This app utilises Natural Language Processing Tools (summarization, translation), and adopts a crowd-sourced and community-curated approach (real-time collaborative editing). 
+This app utilises Natural Language Processing Tools (entity extraction, summarization), and adopts a crowd-sourced and community-curated approach (real-time collaborative discussions via chat functionality). 
 
 How it works!
 
 1. Create a user account
 2. Write a new note based on a book which you are reading
-3. When you submit your completed note, we summarize your app and include this high level summary for ease of reference subsequently 
-4. View other people's summaries, select a translated version if necessary
-5. Add to other summaries in real-time if you are reading the same book
+3. When you submit your completed note, we conduct entity extraction and auto-summarization of your notes
+4. View other people's summaries and discuss in real time via chat
 
 Technologies used
 
-1. MERN Stack - MongoDB, Express, React, Node.js; React Hooks, Creat React App, React Router, React-Bootstrap
-2. Socket.io for real time editing
-3. Systran.io for translation (API)
+1. MERN Stack - MongoDB, Express, React, Node.js; Creat React App, React Router, React-Bootstrap
+2. Bootstrap for front-end formatting
+3. Socket.io for real time editing
 4. Aylien API for entity extraction and text summarization (API)
-5. Google Cloud Text-to-Speech (API)
-6. Bootstrap for front-end formatting
+
+Technologies for Upcoming Features Pipeline
+
+1. Google Cloud Text-to-Speech (API)
+2. Systran.io for translation (API)
 
 To Do
 
-1. Build landing page and about page
-2. Build user sign up
-3. Build note creation and translation feature
-4. Build note viewing 
-5. Build note editing, and translation, speech to text
-
-Models required
-
-1. User model: name, password, email, user_id
-2. Note model: title, book, text, summary, creator, note_id
-3. Join Table: user_id, note_id
+1. Build front-end: landing page and about page
+2. Build front-end: user sign up, note creation and dashboard 
+3. Build back-end: API for user model and note model 
+4. Build note editing
+5. Integrate NLP functionality, build API routes into back-end
+6. Build real-time chat functionality
