@@ -93,7 +93,7 @@ class NotesEdit extends Component {
     }
     entitiesAPI = () => {
         // fetch('http://localhost:3004/api/entities/' + this.state.noteContent)
-        fetch('http://hackreading.herokuapp.com/api/entities/' + this.state.noteContent)
+        fetch('http://hackreadingapi.herokuapp.com/api/entities/' + this.state.noteContent)
             .then(response => response.json())
             .then(noteEntities => {
                 console.log("results of entities api", noteEntities);
