@@ -192,15 +192,15 @@ class NotesEdit extends Component {
                                         </thead>
                                         <tr class="label-1">
                                             <th scope="row"> Keyword </th>
-                                            <td class="align-left"> {this.state.noteEntities.entities.keyword.map(entity => <span class="label">  {entity}  </span>)} </td>
+                                            <td class="align-left"> {this.state.noteEntities.entities.keyword ? this.state.noteEntities.entities.keyword.map(entity => <span class="label">  {entity}  </span>) : ""} </td>
                                         </tr>
                                         <tr>
                                             <th scope="row"> Organisation </th>
-                                            <td class="align-left"> {this.state.noteEntities.entities.organization.map(entity => <span class="label">  {entity}  </span>)} </td>
+                                            <td class="align-left"> {this.state.noteEntities.entities.organization ? this.state.noteEntities.entities.organization.map(entity => <span class="label">  {entity}  </span>) : ""} </td>
                                         </tr>
                                         <tr>
                                             <th scope="row"> Person </th>
-                                            <td class="align-left"> {this.state.noteEntities.entities.person.map(entity => <span class="label">  {entity}  </span>)} </td>
+                                            <td class="align-left"> {this.state.noteEntities.entities.person ? this.state.noteEntities.entities.person.map(entity => <span class="label">  {entity}  </span>) : ""} </td>
                                         </tr>
                                     </table> : ""}
                                 <br></br>
