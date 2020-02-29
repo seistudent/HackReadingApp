@@ -138,6 +138,7 @@ class NotesEdit extends Component {
         event.preventDefault()
         const { currentUser, chatMessage } = this.state
         socket.emit('chat message', { currentUser, chatMessage })
+        this.chatMessage.value = ""
         // this.setState({
         //     chatMessage: '',
         // })
