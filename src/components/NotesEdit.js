@@ -138,10 +138,10 @@ class NotesEdit extends Component {
         event.preventDefault()
         const { currentUser, chatMessage } = this.state
         socket.emit('chat message', { currentUser, chatMessage })
-        this.chatMessage.value = ""
-        // this.setState({
-        //     chatMessage: '',
-        // })
+        // this.chatMessage.value = ""
+        this.setState({
+            chatMessage: '',
+        })
         // this.chatMessage = ''
     }
     render() {
@@ -237,7 +237,7 @@ class NotesEdit extends Component {
                     </div>
                     <ul id="messages"></ul>
                     <form action="">
-                        <input autocomplete="off" onChange={this.handleChange} id='chatMessage' /><button onClick={this.chatSubmit}>Send</button>
+                        <input autocomplete="off" value={this.state.chatMessage} onChange={this.handleChange} id='chatMessage' /><button onClick={this.chatSubmit}>Send</button>
                     </form>
                     <script src="/socket.io/socket.io.js"></script>
                     <script>
