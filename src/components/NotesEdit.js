@@ -20,7 +20,7 @@ class NotesEdit extends Component {
             selectedNote: '',
             chatMessage: '',
             chatUserCount: 0,
-            chatDisplay: [{ id: "", msg: { currentUser: "", chatMessage: "" } }],
+            chatDisplay: [{ id: "", msg: { currentUser: ": : ", chatMessage: " : :" } }],
             notes: [],
         }
     }
